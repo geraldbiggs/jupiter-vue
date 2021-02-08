@@ -1,0 +1,32 @@
+{
+  "name": "base-components",
+  "version": "0.1.0",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/base-components.umd.js",
+  "module": "./dist/base-components.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/base-components.es.js",
+      "require": "./dist/base-components.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.0.0-beta.65"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.5"
+  }
+}

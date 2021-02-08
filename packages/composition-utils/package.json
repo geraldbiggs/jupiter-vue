@@ -1,0 +1,31 @@
+{
+  "name": "composition-utils",
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/composition-utils.umd.js",
+  "module": "./dist/composition-utils.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/composition-utils.es.js",
+      "require": "./dist/composition-utils.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "compressorjs": "^1.0.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.0.0-beta.65"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.5"
+  }
+}
